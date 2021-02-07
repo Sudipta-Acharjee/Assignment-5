@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Monster Food</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.min.css">
+</head>
+
+<body>
+    <main class="container">
+        <form class="col-10  col-md-8 col-lg-7 col-xl-6 m-auto pt-1 pb-2">
+            <div class="input-group mb-1">
+                <!-- Search Box -->
+                <input id="input-option" type="text" required class="form-control" placeholder="Search for meal">
+                <div class="input-group-append">
+                    <button id="search-button" type="button" class="btn">Search</button>
+                </div>
+            </div>
+            <!-- Empty Search Box -->
+            <div style="height: 30px;margin-bottom: 10px;">
+                <p id="warning-text"></p>
+            </div>
+        </form>
+        <!--Single meal Details. Default:Hidden -->
+        <div id="food-details" class="container">
+            <div id="food-details-display" class="row row-cols-1  row-cols-md-2 g-1">
+            </div>
+            <div id="instruction-display">
+                <!-- This div for dynamic -->
+            </div>
+        </div>
+
+        <!--Search result -->
+        <div class="food-container mb-5">
+            <div id="food-list" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+                <!-- Dynamic -->
+            </div>
+        </div>
+    </main>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
