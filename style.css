@@ -43,14 +43,6 @@
     margin:auto;
     border-radius: 20px;
 }
-
-li{
-    font-size: large;
-}
-
-ul{
-    list-style-type:none;
-}
 .instructions{
     text-align: justify;
 }
