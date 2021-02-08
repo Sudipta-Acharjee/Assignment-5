@@ -1,5 +1,4 @@
 function foodDetails(foodId) {
-    console.log(foodId);
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${foodId}`)
         .then(res => res.json())
         .then(data => {
